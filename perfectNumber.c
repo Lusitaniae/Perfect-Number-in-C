@@ -7,7 +7,7 @@ int readInt()
     do{
        printf("Insert Positive Integer: ");
        scanf("%d", &var);
-    }while(var  <1);
+    }while(var < 1) ;
 
     return var;
 }
@@ -28,7 +28,7 @@ int isPerfect(int num)
 int main()
 {
     int n, resp;
-    n=readInt();
+    n = readInt();
     
     if( isPerfect(n) )
         printf("\n %d - perfect number \n", n);
