@@ -1,5 +1,5 @@
 #include<stdio.h>
-# Is this a perfect number?
+//Is this a perfect number?
 
 int readInt()
 {
@@ -8,17 +8,15 @@ int readInt()
        printf("Insert Positive Integer: ");
        scanf("%d", &var);
     }while(var < 1) ;
-
     return var;
 }
 
 int isPerfect(int num)
 {
     int i, soma = 0;
-
-    for(i = 1; i <= num/2; i++)
-        if (num%1 == 0) soma += 1;
-
+    for(i = 1; i <= num - 1; i++)
+        if (num % i == 0) 
+            soma += i;
     if(soma == num)
         return 1;
     else
